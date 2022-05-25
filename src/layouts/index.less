@@ -1,0 +1,115 @@
+#components-layout-demo-custom-trigger .trigger {
+    font-size  : 24px;
+    line-height: 70px;
+    padding    : 0 24px;
+    transition : color 0.3s;
+    float      : left;
+
+    i:hover {
+        color: @header-icon-hover;
+    }
+
+    span {
+        font-size     : 18px;
+        color         : #000000;
+        margin-left   : 25px;
+        vertical-align: top;
+    }
+}
+
+#components-layout-demo-custom-trigger .logo {
+    height     : 70px;
+    line-height: 70px;
+    text-align : center;
+
+    img {
+        width : 125px;
+        height: 41px;
+    }
+
+    .logo-text {
+        width : 41px !important;
+        height: 27px !important;
+    }
+}
+
+.ant-layout-header {
+    box-shadow: 0px 1px 6px 0px rgba(115, 115, 115, 0.43);
+}
+
+.tabs-view-content {
+    position  : relative;
+    height    : calc(100% - 20px);
+    background: #ffffff;
+}
+
+.ant-layout-sider {
+    background: @menu-background;
+}
+
+.ant-menu-dark {
+    background: @menu-background;
+}
+
+/deep/.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: @menu-item-background;
+    box-shadow: none;
+}
+
+/deep/.ant-menu-inline.ant-menu-sub>.ant-menu-item {
+    padding-left: 56px !important;
+    margin      : 0 !important;
+}
+
+/deep/.ant-menu.ant-menu-dark .ant-menu-item-selected,
+/deep/.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background: @menu-normal-color;
+}
+
+/deep/.ant-menu-dark .ant-menu-item-selected {
+    color: @menu-select-color;
+}
+
+/deep/.ant-menu-dark .ant-menu-item:hover {
+    color: @menu-hover-color ;
+}
+
+.ant-menu-dark .ant-menu-item-selected .anticon+span {
+    color: @menu-select-color;
+}
+
+/deep/.menu-icon {
+    display       : inline-block;
+    vertical-align: baseline;
+    margin-right  : 2px;
+
+    img {
+        width : 100%;
+        height: 100%;
+    }
+}
+
+/deep/.ant-menu-inline-collapsed {
+    width: 60px;
+}
+
+/deep/.ant-menu-inline-collapsed .anticon {
+    // width         : 19px !important;
+    // height        : 19px !important;
+    width      : 60px !important;
+    height     : 45px !important;
+    line-height: 45px !important;
+    display    : inline-block;
+
+    img {
+        width : 19px !important;
+        height: 19px !important;
+    }
+}
+
+/deep/.ant-menu-inline-collapsed>.ant-menu-item,
+/deep/.ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item,
+/deep/.ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title,
+/deep/.ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title {
+    padding: 0 0 !important;
+}
